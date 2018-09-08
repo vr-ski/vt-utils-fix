@@ -43,7 +43,7 @@ std::string UpcaseFirst(std::string text)
 std::string strprintf(char const *format, ...)
 {
     char buf[256];
-    va_list(args);
+    va_list args;
     va_start(args, format);
     int nb = vsnprintf(buf, 256, format, args);
     va_end(args);

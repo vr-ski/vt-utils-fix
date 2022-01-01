@@ -21,10 +21,8 @@
 
 namespace vt_utils
 {
-
-float Lerp(float alpha, float initial, float final_value)
-{
-    return alpha * final_value + (1.0f - alpha) * initial;
+float Lerp(float start, float end, float amount) {
+    return start * (1.0f - amount) + end * amount;
 }
 
 uint32_t RoundUpPow2(uint32_t x)

@@ -36,13 +36,14 @@ const float UTILS_PI         = 3.141592653f;
 const float UTILS_2PI        = 6.283185307f;
 //@}
 
-/** \brief Linearly interpolates a value which is (alpha * 100) percent between initial and final
-*** \param alpha Determines where inbetween initial (0.0f) and final (1.0f) the interpolation should be
-*** \param initial The initial value
-*** \param final_value The final value
+/** \brief Linearly interpolates a value which is (amount * 100) percent between start and end values
+*** \param start The initial value
+*** \param end The final value
+*** \param amount Determines where in between initial (0.0f) and final (1.0f) the interpolation should be
+*** Can also be used as desired alpha value, or easing value for smoothing the scrolling.
 *** \return the linear interpolated value
 **/
-float Lerp(float alpha, float initial, float final_value);
+float Lerp(float start, float end, float amount);
 
 /** \brief Rounds an unsigned integer up to the nearest power of two.
 *** \param x The number to round up.

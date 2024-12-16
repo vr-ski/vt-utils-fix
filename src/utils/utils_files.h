@@ -18,6 +18,7 @@
 #ifndef __UTILS_FILES_HEADER__
 #define __UTILS_FILES_HEADER__
 
+#include <cstdint>
 #include <vector>
 #include <string>
 
